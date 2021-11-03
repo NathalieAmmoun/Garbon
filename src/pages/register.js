@@ -35,8 +35,12 @@ function Register(){
 			}
 	}
 		catch(error){
+
 			console.log(error);
-		}}
+			alert('passwords do not match')
+		}}else{
+			alert('please enter information in all fields')
+		}
 	}
 
 

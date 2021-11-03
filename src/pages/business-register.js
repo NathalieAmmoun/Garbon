@@ -30,7 +30,9 @@ function BusinessRegistration(){
 	}
 		catch(error){
 			console.log(error);
-		}}
+		}}else{
+			alert('please enter all necessary information')
+		}
 	}
         return(
             <div>

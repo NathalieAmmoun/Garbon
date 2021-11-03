@@ -34,6 +34,7 @@ function UserProfile(){
 		var requestCard = requests.map((request, index)=>{
 			return (
                 <UserRequestCard key={index} info={request} />
+                
 				)
 		})
 	}
@@ -41,11 +42,11 @@ function UserProfile(){
             <div>
                  <GeneralHeader />
                
-                <section className=" section_padding_top_100 section_padding_bottom_100 " style={{backgroundColor:"#f7f7f7"}}>
+                <section className="  " style={{backgroundColor:"#f7f7f7"}}>
 				<div className="container">
 					<div className="row topmargin_30 columns_margin_bottom_20">
 						<UserProfileCard />
-                        <div className="col-md-6">
+                        <div className="col-md-6 ">
 							<h3 className="dashboard-page-title">Your Pickup Requests From</h3>
 						</div>
                         {requestCard}

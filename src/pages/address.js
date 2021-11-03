@@ -32,7 +32,9 @@ function AddressRegistration(){
 			  history.push("/");}
 		  catch(error){
 			  console.log(error);
-		  }}
+		  }}else{
+			  alert('please enter information in all fields')
+		  }
 	  }
         return(
             <div>

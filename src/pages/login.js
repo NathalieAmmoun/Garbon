@@ -7,6 +7,13 @@ function Login(){
 	const [password, setPassword] = useState("");
 	const history = useHistory();
 	async function login(){
+		if(email===""){
+			return alert('please enter your email')
+		}else{
+			if(password===""){
+				return alert('please enter your password')
+			}
+		}
 		let url = "http://18.217.195.205/api/login";
 		try{ let response = await axios.post(url, {
 			email: email,
@@ -17,7 +24,8 @@ function Login(){
 		history.push("/");
 	}
 		catch(error){
-			console.log(error);
+			console.log(error)
+			alert('your password or email is incorrect')
 		}
 	}
 

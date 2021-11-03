@@ -49,7 +49,9 @@ function CollectorRegistration() {
 	}
 		catch(error){
 			console.log(error);
-		}}}
+		}}}else{
+			alert('please enter all necessary information')
+		}
 	}
 
 	 function registerCollector(){
