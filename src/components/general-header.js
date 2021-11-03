@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function GeneralHeader(){
     return(
-        <div>
+        <div style={{boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
 <section className="page_topline cs two_color section_padding_top_5 section_padding_bottom_5 table_section">
 				<div className="container-fluid">
 					<div className="row">

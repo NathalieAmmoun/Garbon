@@ -9,7 +9,7 @@ function IntroSection(){
                     <img src="./assets/images/bins1.png" alt="" style={{width:"100%"}}/>
                     <div className="container">
                         <div className="row">
-                            <div className="col-sm-12 text-center">
+                            <div className="col-sm-12 text-center" style={{marginTop:"10%"}}>
                                 <div className="slide_description_wrapper">
                                     <div className="slide_description">
                                         <div className="intro-layer" data-animation="fadeInRight">
@@ -26,13 +26,10 @@ function IntroSection(){
                                             <p>Sustainable lifestyle made easy.<br /> Save Your community, Save Your planet</p>
                                     
                                         </div>
-                                        <div className="intro-layer text-center">
-                                            <ul style={{ listStyle:'none'}}>
-                                                <li>
+                                        
+                                        <div className="intro-layer hidden-xs" data-animation="fadeInRight">
                                             <a href="#pickup" className="btn btn-success theme_button color2 margin_0" >Schedule pickup</a>
-                                            </li>
-                                            </ul>
-                                                
+                                    
                                         </div>
                                     </div>
                                     

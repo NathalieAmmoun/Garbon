@@ -25,10 +25,10 @@ function UserRequestCard(props){
     let pickupTime = props.info.request.pickup_time.toString().slice(0,-3);
     return(
 <div className="col-md-4" >
-                                <div className="card border border-dark" style={{backgroundColor:"white", border: 2+"px solid",borderRadius:10+"px", }} >
-                                    <div className="card-header border" style={{height:3+"rem", backgroundColor:"white", borderRadius:10+"px"}}>
-                                    </div>
-                                    <div className="card-body" style={{backgroundColor:"#E5E5E5", borderRadius:10+"px", padding:3+"%"}}>
+                                <div className="card border border-dark" style={{backgroundColor:"white", border: 2+"px solid",borderRadius:10+"px", fontWeight:"500"}} >
+                                    
+                                    
+                                    <div className="card-body" style={{backgroundColor:"white", borderRadius:10+"px", padding:3+"%"}}>
                                     <strong className="card-title">{collectorName}</strong>
                                         <div className="card-text" style={statusStyle}>{status}</div>
                                         <div className="card-text" >You scheduled for: {pickupDate} {pickupTime}</div>
@@ -42,19 +42,28 @@ function UserRequestCard(props){
     export default UserRequestCard;
 
 var pendingStyle={
-    color:"#945700", 
+    background:"#945700",
+    width:"30%",
+    color:"white",
     margin: 0, 
-    padding:0
+    padding:0,
+    paddingLeft:"1%"
 }
 
 var successStyle={
-    color:"#5CB85C", 
+    background:"#5CB85C", 
+    color:"white",
+    width:"30%",
     margin: 0, 
-    padding:0
+    padding:0,
+    paddingLeft:"1%"
 }
 
 var declinedStyle = {
-    color:"#6C100E", 
+    background:"#6C100E", 
+    color:"white",
+    width:"30%",
     margin: 0, 
-    padding:0
+    padding:0,
+    paddingLeft:"1%"
 }
